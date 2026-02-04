@@ -1,6 +1,6 @@
 ![ERROR](https://github.com/amaralandrey/hill-climbing-e-algoritmo-genetico/blob/main/fluxograma-busca-arbitraria.png)
 
-O fluxograma descreve o funcionamento do algoritmo Stochastic Hill Climbing aplicado ao problema das oito rainhas. O processo inicia com a geração de um tabuleiro aleatório, seguido pelo cálculo de seu fitness (que, neste contexto de minimização, representa o número de colisões entre as rainhas). Se o fitness for igual a zero, uma solução ótima foi encontrada e o algoritmo é encerrado com sucesso. Caso contrário, inicia-se um ciclo de busca local.
+O processo inicia com a geração de um tabuleiro aleatório, seguido pelo cálculo de seu fitness (que, neste contexto de minimização, representa o número de colisões entre as rainhas). Se o fitness for igual a zero, uma solução ótima foi encontrada e o algoritmo é encerrado com sucesso. Caso contrário, inicia-se um ciclo de busca local.
 
 Dentro desse ciclo, o algoritmo tenta gerar um vizinho estocástico que seja melhor que a configuração atual. Se uma melhoria for encontrada, o tabuleiro é atualizado com essa nova configuração e o contador de estagnação (que rastreia quantas tentativas falhas ocorreram consecutivamente) é zerado, retornando à fase de cálculo de fitness.
 
